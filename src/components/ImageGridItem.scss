@@ -1,0 +1,40 @@
+@import "~_base.scss";
+
+.imageGridItem {
+	@include box;
+	position: relative;
+	overflow: hidden;
+	flex: 1 auto;
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+
+	@at-root {
+		#{&}__id {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			font-size: 90px;
+			line-height: 80px;
+			font-family: $header-font;
+			color: transparentize( $gray, 0.4 );
+			z-index: 0;
+		}
+		#{&}__innerContainer {
+			position: relative;
+			z-index: 1;
+		}
+		#{&}__imageContainer {
+			padding: 10px 0;
+			text-align: center;
+			background: transparentize( $gray, 0.5 );
+			border: 1px solid transparentize( $gray, 0.2 );
+			border-bottom: 1px solid $red;
+		}
+		#{&}__image {
+			width: 75px;
+		}
+		#{&}__info {
+		}
+	}
+}

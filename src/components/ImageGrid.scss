@@ -1,0 +1,59 @@
+@import "~_base.scss";
+
+.dialogBox {
+	border-top: 1px solid $gray;
+	border-bottom: 1px solid $gray;
+	padding: 20px;
+	margin: 20px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+.sortImages {
+	@include clearfix;
+	font-size: 20px;
+	margin: 20px 0;
+
+	@at-root {
+		#{&}__label {
+			display: block;
+			padding: 10px 0;
+			float: left;
+		}
+		#{&}__buttons {
+			@include clearfix;
+			margin: 0 0 0 20px;
+			padding: 0;
+			float: left;
+		}
+		#{&}__button {
+			display: block;
+			padding: 10px;
+			margin-right: 5px;
+			min-width: 50px;
+			float: left;
+			list-style: none;
+			text-align: center;
+			font-weight: 300;
+			cursor: pointer;
+			background: $gray;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			#{&}--active {
+				composes: sortImages__button;
+				background: $light-gray;
+				border-bottom: 2px solid $red;
+			}
+		}
+	}
+}
+
+.imageGrid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin: -5px; // effectively removing margin for outermost items
+}

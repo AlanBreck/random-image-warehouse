@@ -1,0 +1,23 @@
+$header-font: "Oswald", sans-serif;
+$paragraph-font: "Roboto Condensed", sans-serif;
+
+$red: #ce4233;
+$white: #fefefe;
+$gray: #dddddd;
+$light-gray: #eeeeee;
+$dark-gray: #444444;
+$darker-gray: #222222;
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin box {
+	background: $light-gray;
+	border: 1px solid $gray;
+	padding: 10px;
+}

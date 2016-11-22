@@ -1,0 +1,27 @@
+@import "~_base.scss";
+
+:global {
+	html, body {
+		background: $white;
+	}
+
+	body {
+		color: $dark-gray;
+		font-family: $paragraph-font;
+	}
+
+	h1 {
+		margin-top: 0;
+		font-family: $header-font;
+		font-size: 52px;
+		color: $darker-gray;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	.wrapper {
+		padding: 20px;
+	}
+}

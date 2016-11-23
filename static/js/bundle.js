@@ -21595,6 +21595,15 @@
 					"div",
 					null,
 					_react2.default.createElement(
+						"header",
+						null,
+						_react2.default.createElement(
+							"h1",
+							{ "class": "siteTitle" },
+							"Random Image Warehouse"
+						)
+					),
+					_react2.default.createElement(
 						"div",
 						{ className: _ImageGrid2.default.sortImages },
 						_react2.default.createElement(

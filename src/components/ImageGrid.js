@@ -96,6 +96,9 @@ export default class ImageGrid extends React.Component {
 		return (
 
 			<div>
+				<header>
+		            <h1 class="siteTitle">Random Image Warehouse</h1>
+		        </header>
 				<div className={styles.sortImages}>
 					<span className={styles.sortImages__label}>Sort Images:</span>
 					<ul className={styles.sortImages__buttons}>
